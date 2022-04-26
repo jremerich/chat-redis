@@ -1,0 +1,33 @@
+.chat-message {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.chat-message input {
+  border-radius: 5px;
+  border: 1px solid #282A36;
+  background-color: #282A36;
+  width: 100%;
+  margin-right: 10px;
+  padding: 10px;
+  color: #eee;
+  outline: none;
+}
+
+.chat-message input:focus {
+  border: 1px solid #BD93F9;
+}
+
+.chat-message input::selection {
+  background-color: #44475A;
+}
+
+.chat-message button {
+  border-radius: 5px;
+  border: 1px solid #343746;
+  background-color: #343746;
+  margin-right: 10px;
+  padding: 10px;
+  color: #6272A4;
+}

@@ -1,0 +1,14 @@
+.list-users {
+  width: 20vw;
+  color: #fff;
+}
+
+.list-users ul {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+.list-users li.you svg {
+  margin-right: 5px;
+}

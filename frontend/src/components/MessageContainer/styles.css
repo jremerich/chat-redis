@@ -1,0 +1,19 @@
+.chat-content {
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #282A36;
+  width: auto;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  /**
+   * justify-content: flex-end; DO NOT USE: breaks scrolling
+   * https://stackoverflow.com/a/37515194
+  */
+}
+
+.chat-content > :first-child {
+   margin-top: auto !important;
+  /* use !important to prevent breakage from child margin settings */
+}

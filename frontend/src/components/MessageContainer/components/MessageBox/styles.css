@@ -1,0 +1,83 @@
+.message {
+  border-radius: 5px;
+  background-color: #434a6e;
+  align-self: center;
+  padding: 10px;
+  margin: 0 15px 10px 15px;
+}
+
+.message p {
+  padding: 0;
+  margin: 0;
+  color: #9da6db;
+  font-size: 0.8em;
+}
+
+.message .user,
+.message .time {
+  display: none;
+}
+
+.message.mine,
+.message.from-others {
+  text-align: left;
+  max-width: 85%;
+  position: relative;
+}
+
+.message.mine::before,
+.message.from-others::before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #BD93F9;
+  transform: rotate(45deg);
+  top: 5px;
+  right: -5px;
+}
+
+.message.mine {
+  align-self: flex-end;
+  background-color: #BD93F9;
+}
+
+.message.mine::before {
+  background-color: #BD93F9;
+  right: -5px;
+}
+
+.message.from-others {
+  align-self: flex-start;
+  background-color: #73778b;
+}
+
+.message.from-others::before {
+  background-color: #73778b;
+  left: -5px;
+}
+
+.message.from-others .user {
+  color: #191A21;
+  font-size: 1em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.message.mine .content,
+.message.from-others .content {
+  font-size: 1em;
+  color: #282A36;
+}
+
+.message.mine .time,
+.message.from-others .time,
+.message.from-others .user {
+  display: block;
+}
+
+.message .time {
+  color: #434a6e;
+  text-align: right;
+  margin-top: 10px;
+}
