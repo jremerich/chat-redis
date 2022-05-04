@@ -6,7 +6,7 @@ function MessageBox({ time, from, content }) {
   const { users: { user } } = useContext(MessageContext);
   let messageClass = ' from-others';
 
-  if (from === user) {
+  if (from === user.id) {
     messageClass = ' mine';
   } else if (from === 'SYSTEM') {
     messageClass = ''
